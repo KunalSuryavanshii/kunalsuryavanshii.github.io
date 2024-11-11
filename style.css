@@ -40,9 +40,10 @@ a:hover {
 }
 
 .profile-image img {
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Match width to make it circular */
-    object-fit: cover; /* Ensures the image does not appear stretched */
+    width: 180px; /* Increase the width */
+    height: 180px; /* Increase the height to match width */
+    object-fit: cover;
+    padding: 5px; /* Add some padding */
     border-radius: 50%;
     border: 4px solid #1E90FF; /* Blue border for a professional look */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
