@@ -8,8 +8,8 @@ body {
 
 /* Header Section */
 header {
-    background-color: #0066cc; /* Blue background */
-    color: white;
+    background-color: #0066cc; /* Keep the blue background */
+    color: #000000; /* Change the font color to black */
     text-align: center;
     padding: 30px 0;
     border-bottom: 3px solid #004080; /* Darker blue line */
