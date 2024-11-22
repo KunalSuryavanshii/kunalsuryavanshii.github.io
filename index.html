@@ -9,16 +9,16 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #D3D3D3; /* Light gray */
-            color: black;
+            background-color: #F5F5F5; /* Light Gray Background */
+            color: black; /* Black Text */
             line-height: 1.6;
         }
         .container {
             width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
+            max-width: 1000px;
+            margin: 30px auto;
             background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             padding: 20px;
             border-radius: 8px;
         }
@@ -27,22 +27,35 @@
         .header {
             text-align: center;
             padding: 20px;
-            background: #333333; /* Dark Gray for header */
+            background: #4A148C; /* Purple Header */
             color: white;
             border-radius: 8px 8px 0 0;
         }
         .header img {
             border-radius: 50%;
-            max-width: 150px;
-            margin-bottom: 15px;
+            border: 4px solid white;
+            max-width: 120px;
+            background-color: #4A148C; /* Matches Header Background */
         }
         .header h1 {
             margin: 10px 0;
             font-size: 2rem;
         }
         .header p {
-            margin: 0;
-            font-size: 1rem;
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
         /* Section Titles */
@@ -51,55 +64,22 @@
             align-items: center;
             font-size: 1.5rem;
             margin: 20px 0;
-            color: black; /* Black titles */
+            color: #4A148C; /* Purple Title */
         }
         .section h2 i {
             margin-right: 10px;
         }
 
         /* Content Styles */
-        .section {
-            margin-bottom: 30px;
+        .section ul {
+            margin: 0;
+            padding-left: 20px;
         }
-        .section p, .section ul {
-            margin-left: 20px;
+        .section ul li {
+            margin-bottom: 10px;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li::before {
-            content: "•";
-            color: black; /* Black bullet points */
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-
-        /* Contact Info */
-        .contact-info {
-            text-align: center;
-            font-size: 0.9rem;
-            margin-top: 10px;
-        }
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* Links */
-        a {
-            color: black;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .section ul li strong {
+            color: #4A148C;
         }
 
         /* Footer */
@@ -107,7 +87,7 @@
             text-align: center;
             margin-top: 20px;
             font-size: 0.8rem;
-            color: #555555;
+            color: #555;
         }
     </style>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -119,66 +99,75 @@
 
         <!-- Header Section -->
         <div class="header">
-            <img src="https://raw.githubusercontent.com/KunalSuryavanshii/kunalsuryavanshii.github.io/refs/heads/main/IMG_20241111_091351713%5B2%5D.jpg" alt="Profile Photo">
+            <img src="https://via.placeholder.com/120" alt="Profile Photo">
             <h1>Kunal A. Suryawanshi</h1>
-            <p>Professional | Problem Solver | Adaptable</p>
+            <p>Versatile Professional | Quality Assurance | NLP Specialist</p>
             <div class="contact-info">
                 <a href="mailto:kunalsury777@gmail.com"><i class="fas fa-envelope"></i> kunalsury777@gmail.com</a> | 
                 <a href="tel:+919823498399"><i class="fas fa-phone"></i> (+91) 9823498399</a> | 
                 <a href="https://www.linkedin.com/in/kunal-suryavanshi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
-                <a href="https://github.com/KunalSuryavanshii" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <span>Sangli, Maharashtra, India</span>
             </div>
         </div>
 
-        <!-- Summary Section -->
-        <div class="section">
-            <h2><i class="fas fa-user"></i> Summary</h2>
-            <p>Versatile professional with over 3 years of cross-industry experience in Engineering, Technology, Healthcare, and Finance. Skilled in Quality Assurance (QA), Natural Language Processing (NLP), and data-driven project management, with a proven ability to deliver impactful solutions. Proficient in Indian Stock Market (NSE) operations, U.S. healthcare insurance billing, and mental health technology. Known for adaptability, collaboration, and a commitment to continuous learning, I thrive in fast-paced, dynamic IT environments. Passionate about leveraging emerging technologies to drive innovation and business success.</p>
-        </div>
-
-        <!-- Skills Section -->
-        <div class="section">
-            <h2><i class="fas fa-tools"></i> Skills</h2>
-            <ul>
-                <li><strong>Technical Skills:</strong> Quality Assurance Testing, Manual Testing, Jira, Miro, GitHub, Python, SQL, Power BI, Microsoft Office tools, Google Suite, Test Case Writing and Execution, Prompt Engineering and Optimization, AI Tool Proficiency.</li>
-                <li><strong>Analytical Skills:</strong> Problem-solving, Root Cause Analysis, Performance Metrics, Process Improvement, Data Analysis, Data Annotation.</li>
-                <li><strong>Soft Skills:</strong> Communication, Cross-functional Collaboration, Teamwork, Multitasking, Prioritization, Active Listening.</li>
-            </ul>
-        </div>
-
-        <!-- Professional Experience Section -->
+        <!-- Professional Experience -->
         <div class="section">
             <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
             <ul>
-                <li>
-                    <strong>Chatowl Inc., USA (Remote):</strong> November 2022 – Present <br>
-                    <em>Quality Assurance (QA) & Natural Language Processing (NLP) Assistant</em>
+                <li><strong>Chatowl Inc., USA (Remote):</strong> November 2022 – Present
                     <ul>
-                        <li>Improved AI-driven chat tools for therapy, cutting errors by 20%.</li>
-                        <li>Streamlined QA systems, saving 25% time.</li>
-                        <li>Used SQL/Argilla to refine Human Emotion models.</li>
+                        <li>Contributed to a venture-backed U.S. Mental Health Startup delivering affordable, AI-driven Chat therapy.</li>
+                        <li>Improved NLP-based mental health tools, reducing error rates by 20% and increasing user satisfaction with high-quality data for LLM training.</li>
+                        <li>Streamlined QA processes, achieving a 25% decrease in testing cycle time.</li>
+                        <li>Utilized SQL and Argilla for data analysis, contributing to enhanced data accuracy and model performance for Human Emotion and Understanding.</li>
+                        <li>Enhanced communication and transparency through effective test case design, documentation, and reporting using Microsoft Office and Google Workplace tools.</li>
                     </ul>
                 </li>
-                <li>
-                    <strong>Omega Healthcare Management Services:</strong> April 2022 – October 2022 <br>
-                    <em>Accounts Receivable Assistant</em>
+                <li><strong>Omega Healthcare Management Services, Bangalore:</strong> April 2022 – October 2023
                     <ul>
-                        <li>Resolved transaction discrepancies for Medicare claims, achieving 85% accuracy.</li>
+                        <li>Resolved transaction discrepancies for Medicare, Medicaid, and private insurance claims, achieving 85% billing accuracy.</li>
+                        <li>Created Excel-based reports, improving reconciliation efficiency and reducing processing time by 10%.</li>
+                        <li>Supported U.S. healthcare Insurance operations, specializing in Ambulance services for Northern California State.</li>
+                    </ul>
+                </li>
+                <li><strong>I Plus Research Services, Bangalore:</strong> January 2022 – March 2022
+                    <ul>
+                        <li>Advised clients on NSE stock investments, increasing client satisfaction scores by 20%.</li>
+                        <li>Delivered personalized investment solutions, enhancing customer engagement and retention.</li>
+                        <li>Educated clients on intraday and options trading, promoting informed decisions and reducing fear of the Indian Stock Market.</li>
                     </ul>
                 </li>
             </ul>
         </div>
 
-        <!-- Projects & Achievements Section -->
+        <!-- Education -->
+        <div class="section">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul>
+                <li><strong>Aircraft Maintenance Engineering (Mechanical Stream):</strong> Hindustan Aerospace & Engineering, Pune (June 2017 - Dec 2021)</li>
+                <li><strong>B.Sc. in Industrial Science:</strong> Yashwantrao Chavan Maharashtra Open University, Nashik (June 2017 - June 2021)</li>
+            </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+            <h2><i class="fas fa-language"></i> Languages</h2>
+            <ul>
+                <li>English: Professional Working</li>
+                <li>Hindi: Professional Working</li>
+                <li>Marathi: Native or Bilingual</li>
+            </ul>
+        </div>
+
+        <!-- Projects & Achievements -->
         <div class="section">
             <h2><i class="fas fa-trophy"></i> Projects & Achievements</h2>
             <ul>
-                <li><strong>AI Model Enhancement:</strong> Improved NLP-based tools, increasing user satisfaction by 30%.</li>
-                <li><strong>Healthcare Accuracy:</strong> Achieved record billing accuracy for Northern California operations.</li>
-                <li><strong>Education Campaigns:</strong> Reduced fear of NSE intraday trading for 200+ clients.</li>
+                <li><strong>Therapeutic Conversation Data Gathering:</strong> Developed and optimized therapeutic conversations to enhance machine learning and NLP AI systems, promoting stress-free, empathetic interactions.</li>
+                <li><strong>Billing Accuracy Project at Omega Healthcare:</strong> Refined tracking systems, achieving 90% billing accuracy and setting a record of $14,203 cash collections in a week (June 29, 2022).</li>
+                <li><strong>QA Process Optimization at Chatowl Inc.:</strong> Reduced testing cycle time by 25% and improved sentence emotion detection for enhanced chatbot responses.</li>
             </ul>
         </div>
-
     </div>
 </body>
 </html>
