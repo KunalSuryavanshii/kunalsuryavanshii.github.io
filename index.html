@@ -5,72 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunal A. Suryawanshi - Resume</title>
     <style>
+        /* General Styles */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: white;
+            font-family: 'Arial', sans-serif;
+            background-color: #D3D3D3; /* Light gray */
+            color: black;
+            line-height: 1.6;
         }
         .container {
             width: 90%;
-            margin: auto;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 20px;
+            border-radius: 8px;
         }
+
+        /* Header Section */
         .header {
             text-align: center;
             padding: 20px;
+            background: #333333; /* Dark Gray for header */
+            color: white;
+            border-radius: 8px 8px 0 0;
         }
         .header img {
             border-radius: 50%;
             max-width: 150px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
-        h1, h2 {
-            color: #6A0DAD; /* Purple color for titles */
+        .header h1 {
+            margin: 10px 0;
+            font-size: 2rem;
         }
-        .section {
-            margin-top: 30px;
+        .header p {
+            margin: 0;
+            font-size: 1rem;
         }
+
+        /* Section Titles */
         .section h2 {
             display: flex;
             align-items: center;
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: black; /* Black titles */
         }
         .section h2 i {
             margin-right: 10px;
         }
+
+        /* Content Styles */
+        .section {
+            margin-bottom: 30px;
+        }
+        .section p, .section ul {
+            margin-left: 20px;
+        }
         ul {
-            padding-left: 20px;
+            list-style: none;
+            padding: 0;
         }
-        ul li {
-            margin-bottom: 5px;
+        ul li::before {
+            content: "•";
+            color: black; /* Black bullet points */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
+
+        /* Contact Info */
         .contact-info {
             text-align: center;
-            margin-bottom: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
         }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Links */
         a {
-            color: #6A0DAD;
+            color: black;
+            font-weight: bold;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #555555;
         }
     </style>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+    <!-- Container -->
     <div class="container">
+
         <!-- Header Section -->
         <div class="header">
             <img src="https://raw.githubusercontent.com/KunalSuryavanshii/kunalsuryavanshii.github.io/refs/heads/main/IMG_20241111_091351713%5B2%5D.jpg" alt="Profile Photo">
             <h1>Kunal A. Suryawanshi</h1>
+            <p>Professional | Problem Solver | Adaptable</p>
             <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:kunalsury777@gmail.com">kunalsury777@gmail.com</a> | 
-                <i class="fas fa-phone"></i> (+91) 9823498399 | 
-                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kunal-suryavanshi" target="_blank">linkedin.com/in/kunal-suryavanshi</a> | 
-                <i class="fab fa-github"></i> <a href="https://github.com/KunalSuryavanshii" target="_blank">github.com/KunalSuryavanshii</a> | 
-                <i class="fas fa-map-marker-alt"></i> Sangli, Maharashtra, India</p>
+                <a href="mailto:kunalsury777@gmail.com"><i class="fas fa-envelope"></i> kunalsury777@gmail.com</a> | 
+                <a href="tel:+919823498399"><i class="fas fa-phone"></i> (+91) 9823498399</a> | 
+                <a href="https://www.linkedin.com/in/kunal-suryavanshi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
+                <a href="https://github.com/KunalSuryavanshii" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
 
@@ -93,21 +149,23 @@
         <!-- Professional Experience Section -->
         <div class="section">
             <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-            <h3><u>Chatowl Inc., USA (Remote):</u> November 2022 – Present</h3>
-            <p><strong>Quality Assurance (QA) & Natural Language Processing (NLP) Assistant</strong></p>
             <ul>
-                <li>Contributed to a venture-backed U.S. Mental Health Startup delivering affordable, AI-driven Chat therapy.</li>
-                <li>Improved NLP-based mental health tools, reducing error rates by 20% and increasing user satisfaction with high-quality data for LLM training.</li>
-                <li>Led cross-functional collaboration to streamline QA processes, achieving a 25% decrease in testing cycle time.</li>
-            </ul>
-        </div>
-
-        <!-- Education Section -->
-        <div class="section">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <ul>
-                <li><strong>Hindustan Aerospace & Engineering, Pune:</strong> June 2017 - December 2021 (Aircraft Maintenance Engineering)</li>
-                <li><strong>YCMOU, Nashik:</strong> June 2017 - June 2021 (B.Sc. in Industrial Science)</li>
+                <li>
+                    <strong>Chatowl Inc., USA (Remote):</strong> November 2022 – Present <br>
+                    <em>Quality Assurance (QA) & Natural Language Processing (NLP) Assistant</em>
+                    <ul>
+                        <li>Improved AI-driven chat tools for therapy, cutting errors by 20%.</li>
+                        <li>Streamlined QA systems, saving 25% time.</li>
+                        <li>Used SQL/Argilla to refine Human Emotion models.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Omega Healthcare Management Services:</strong> April 2022 – October 2022 <br>
+                    <em>Accounts Receivable Assistant</em>
+                    <ul>
+                        <li>Resolved transaction discrepancies for Medicare claims, achieving 85% accuracy.</li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
@@ -115,11 +173,12 @@
         <div class="section">
             <h2><i class="fas fa-trophy"></i> Projects & Achievements</h2>
             <ul>
-                <li><strong>Therapeutic Conversation Data Gathering:</strong> Developed and optimized therapeutic conversations to enhance machine learning and NLP-AI systems, enabling more effective and empathetic interactions.</li>
-                <li><strong>Billing Accuracy Project:</strong> Refined a tracking system ensuring 90% billing accuracy for Medicare, Medicaid, and Private Insurance accounts.</li>
+                <li><strong>AI Model Enhancement:</strong> Improved NLP-based tools, increasing user satisfaction by 30%.</li>
+                <li><strong>Healthcare Accuracy:</strong> Achieved record billing accuracy for Northern California operations.</li>
+                <li><strong>Education Campaigns:</strong> Reduced fear of NSE intraday trading for 200+ clients.</li>
             </ul>
         </div>
-    </div>
 
+    </div>
 </body>
 </html>
