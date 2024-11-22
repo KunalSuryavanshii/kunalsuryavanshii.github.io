@@ -5,86 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunal A. Suryawanshi - Resume</title>
     <style>
-        /* Global Styles */
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #D3D3D3;
+            font-family: 'Arial', sans-serif;
+            background-color: #D3D3D3; /* Light gray */
+            color: black;
             line-height: 1.6;
         }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #333333; /* Dark Gray for header */
+            color: white;
+            border-radius: 8px 8px 0 0;
+        }
+        .header img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            margin: 10px 0;
+            font-size: 2rem;
+        }
+        .header p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Section Titles */
+        .section h2 {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: black; /* Black titles */
+        }
+        .section h2 i {
+            margin-right: 10px;
+        }
+
+        /* Content Styles */
+        .section {
+            margin-bottom: 30px;
+        }
+        .section p, .section ul {
+            margin-left: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "•";
+            color: black; /* Black bullet points */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Links */
         a {
-            color: #007BFF;
+            color: black;
+            font-weight: bold;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
 
-        /* Header */
-        header {
-            background: #007BFF;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 5px solid white;
-            margin-bottom: 15px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-        header p {
-            margin: 5px 0;
-        }
-
-        /* Section Styles */
-        section {
-            background: white;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-        }
-        section h2 {
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 5px;
-            color: #007BFF;
-        }
-        ul {
-            padding-left: 20px;
-            list-style-type: disc;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-
         /* Footer */
-        footer {
+        .footer {
             text-align: center;
             margin-top: 20px;
-            font-size: 14px;
-            color: #666;
+            font-size: 0.8rem;
+            color: #555555;
         }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <img src="https://raw.githubusercontent.com/KunalSuryavanshii/kunalsuryavanshii.github.io/refs/heads/main/IMG_20241111_091351713%5B2%5D.jpg" alt="Profile Photo">
-        <h1>Kunal A. Suryawanshi</h1>
-        <p>Email: <a href="mailto:kunalsury777@gmail.com">kunalsury777@gmail.com</a></p>
-        <p>Phone: (+91) 9823498399</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/kunal-suryavanshi" target="_blank">linkedin.com/in/kunal-suryavanshi</a></p>
-        <p>GitHub: <a href="https://github.com/KunalSuryavanshii" target="_blank">github.com/KunalSuryavanshii</a></p>
-        <p>Location: Sangli, Maharashtra, India</p>
-    </header>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Header Section -->
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/KunalSuryavanshii/kunalsuryavanshii.github.io/refs/heads/main/IMG_20241111_091351713%5B2%5D.jpg" alt="Profile Photo">
+            <h1>Kunal A. Suryawanshi</h1>
+            <p>Professional | Problem Solver | Adaptable</p>
+            <div class="contact-info">
+                <a href="mailto:kunalsury777@gmail.com"><i class="fas fa-envelope"></i> kunalsury777@gmail.com</a> | 
+                <a href="tel:+919823498399"><i class="fas fa-phone"></i> (+91) 9823498399</a> | 
+                <a href="https://www.linkedin.com/in/kunal-suryavanshi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
+                <a href="https://github.com/KunalSuryavanshii" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
 
     <section>
         <h2><i class="fas fa-user"></i> Summary</h2>
@@ -163,7 +207,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Kunal A. Suryawanshi / 9823498399</p>
+        <p>&copy; 2024 Kunal A. Suryawanshi / (+91 9823498399)</p>
     </footer>
 </body>
 </html>
