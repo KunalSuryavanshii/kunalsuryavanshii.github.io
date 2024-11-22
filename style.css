@@ -41,8 +41,8 @@ header .tagline {
 /* Contact Information */
 .contact-info {
     font-size: 16px;
-    line-height: 1.8; /* Increase spacing between lines */
-    color: white;
+    line-height: 1.8;
+    color: #000000; /* Change text color to black */
 }
 
 .contact-info p {
