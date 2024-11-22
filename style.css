@@ -1,32 +1,47 @@
+/* General Header Styling */
 header {
-    background: #D3D3D3; /* Existing style */
-    color: white;        /* Existing style */
+    background: linear-gradient(to right, #0066cc, #003399); /* Subtle gradient */
+    color: white;
     padding: 20px;
-    text-align: center;  /* New: Center-align all text */
-    display: flex;       /* New: Use flexbox for centering */
-    flex-direction: column; /* New: Stack content vertically */
-    align-items: center; /* New: Horizontally center-align content */
+    text-align: center;
+    border-bottom: 3px solid #003366; /* Add a professional touch with a border */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between items */
 }
 
+/* Profile Image Styling */
 header img {
-    border-radius: 50%; /* Existing style */
-    width: 150px;       /* Existing style */
-    height: 150px;      /* Existing style */
-    border: 5px solid white; /* Existing style */
-    margin-bottom: 15px; /* Existing style */
+    border-radius: 50%; /* Makes the image circular */
+    width: 120px; /* Adjust size */
+    height: 120px;
+    border: 3px solid white; /* Thin white border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 10px;
 }
 
+/* Header Title */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Contact Details */
 header p {
-    margin: 5px 0;      /* Existing style */
-    font-size: 16px;    /* New: Add consistency to font size */
+    margin: 3px 0; /* Tighten spacing */
+    font-size: 16px; /* Uniform font size */
 }
 
+/* Links */
 header a {
-    color: #FFD700;     /* New: Add golden color for links */
-    font-weight: bold;  /* New: Make links stand out */
-    text-decoration: none; /* Optional: Remove underline */
+    color: #FFD700; /* Golden links */
+    text-decoration: none;
+    font-weight: bold;
 }
 
 header a:hover {
-    text-decoration: underline; /* New: Add hover effect */
+    text-decoration: underline;
+    color: #FFF; /* White for hover effect */
 }
