@@ -1,47 +1,61 @@
-/* General Header Styling */
+/* Page Background */
+body {
+    background-color: #D3D3D3; /* Light gray background */
+    font-family: Arial, sans-serif; /* Clean and professional font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
 header {
-    background: linear-gradient(to right, #0066cc, #003399); /* Subtle gradient */
-    color: white;
-    padding: 20px;
+    background-color: #0066cc; /* Blue background */
+    color: white; /* White text for contrast */
+    padding: 20px 0; /* Vertical padding for spacing */
     text-align: center;
-    border-bottom: 3px solid #003366; /* Add a professional touch with a border */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Space between items */
+    border-bottom: 5px solid #004080; /* Add a darker blue border for depth */
 }
 
 /* Profile Image Styling */
 header img {
-    border-radius: 50%; /* Makes the image circular */
-    width: 120px; /* Adjust size */
-    height: 120px;
-    border: 3px solid white; /* Thin white border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-bottom: 10px;
+    border-radius: 50%; /* Circular image */
+    width: 150px; /* Image size */
+    height: 150px;
+    border: 4px solid white; /* Thin white border for focus */
+    margin-bottom: 10px; /* Space below image */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
-/* Header Title */
+/* Name Styling */
 header h1 {
-    margin: 0;
-    font-size: 24px;
+    font-size: 32px; /* Larger font size for name */
     font-weight: bold;
+    margin: 10px 0; /* Spacing around the name */
+}
+
+/* Tagline Styling */
+header .tagline {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 15px; /* Space below tagline */
 }
 
 /* Contact Details */
-header p {
-    margin: 3px 0; /* Tighten spacing */
-    font-size: 16px; /* Uniform font size */
+header .contact-info {
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Spacing between contact items */
 }
 
-/* Links */
-header a {
-    color: #FFD700; /* Golden links */
+header .contact-info a {
+    color: #FFD700; /* Golden color for links */
     text-decoration: none;
     font-weight: bold;
 }
 
-header a:hover {
+header .contact-info a:hover {
+    color: white; /* White text on hover */
     text-decoration: underline;
-    color: #FFF; /* White for hover effect */
 }
