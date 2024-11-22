@@ -3,127 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunal Anil Suryawanshi - Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kunal A. Suryawanshi - Resume</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: white;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #6A0DAD; /* Purple color for titles */
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section h2 {
+            display: flex;
+            align-items: center;
+        }
+        .section h2 i {
+            margin-right: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #6A0DAD;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- Main Container -->
     <div class="container">
-        <!-- Profile Image Section -->
-    <div class="profile-image">
-    <img src="https://raw.githubusercontent.com/KunalSuryavanshii/kunalsuryavanshii.github.io/refs/heads/main/IMG_20241111_091351713%5B2%5D.jpg" alt="Profile Photo">
-</div>
-
-<!-- Modal Structure -->
-<div id="myModal" class="modal" onclick="closeModal()">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="fullImage">
-</div>
-
-
-       <!-- Header Section -->
-        <header>
-            <h1>Kunal Anil Suryawanshi</h1>
-            <p>📧 kunalsury777@gmail.com | 📞 +91-9823498399</p>
-            <p>🌐 <a href="https://linkedin.com/in/kunal-suryavanshi" target="_blank">LinkedIn</a> | <a href="https://github.com/KunalSuryavanshii" target="_blank">GitHub</a></p>
-        </header>
-
-        <hr>
+        <!-- Header Section -->
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/KunalSuryavanshii/kunalsuryavanshii.github.io/refs/heads/main/IMG_20241111_091351713%5B2%5D.jpg" alt="Profile Photo">
+            <h1>Kunal A. Suryawanshi</h1>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:kunalsury777@gmail.com">kunalsury777@gmail.com</a> | 
+                <i class="fas fa-phone"></i> (+91) 9823498399 | 
+                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kunal-suryavanshi" target="_blank">linkedin.com/in/kunal-suryavanshi</a> | 
+                <i class="fab fa-github"></i> <a href="https://github.com/KunalSuryavanshii" target="_blank">github.com/KunalSuryavanshii</a> | 
+                <i class="fas fa-map-marker-alt"></i> Sangli, Maharashtra, India</p>
+            </div>
+        </div>
 
         <!-- Summary Section -->
-        <section>
-            <h2>Summary</h2>
-            <p>Result-oriented professional with experience across engineering, healthcare, finance, and sales, specializing in Quality Assurance (QA), Natural Language Processing (NLP), and data-driven project management. Proven track record in reducing error rates by 20% and testing cycle times by 25%. Passionate about delivering user-centered solutions, particularly in mental health technology, to improve user satisfaction and engagement. Seeking to contribute analytical and technical skills in a dynamic, growth-focused environment.</p>
-        </section>
-
-        <hr>
+        <div class="section">
+            <h2><i class="fas fa-user"></i> Summary</h2>
+            <p>Versatile professional with over 3 years of cross-industry experience in Engineering, Technology, Healthcare, and Finance. Skilled in Quality Assurance (QA), Natural Language Processing (NLP), and data-driven project management, with a proven ability to deliver impactful solutions. Proficient in Indian Stock Market (NSE) operations, U.S. healthcare insurance billing, and mental health technology. Known for adaptability, collaboration, and a commitment to continuous learning, I thrive in fast-paced, dynamic IT environments. Passionate about leveraging emerging technologies to drive innovation and business success.</p>
+        </div>
 
         <!-- Skills Section -->
-        <section>
-            <h2>Skills</h2>
-            <h3>Technical Skills</h3>
+        <div class="section">
+            <h2><i class="fas fa-tools"></i> Skills</h2>
             <ul>
-                <li><strong>Quality Assurance & Testing:</strong> Automation Testing, Manual Testing, Root Cause Analysis</li>
-                <li><strong>Programming & Tools:</strong> SQL, Python, Power BI, GitHub, Microsoft Office Suite, Google Workspace</li>
-                <li><strong>Data Analysis:</strong> Process Improvement, Performance Metrics, Data Annotation</li>
+                <li><strong>Technical Skills:</strong> Quality Assurance Testing, Manual Testing, Jira, Miro, GitHub, Python, SQL, Power BI, Microsoft Office tools, Google Suite, Test Case Writing and Execution, Prompt Engineering and Optimization, AI Tool Proficiency.</li>
+                <li><strong>Analytical Skills:</strong> Problem-solving, Root Cause Analysis, Performance Metrics, Process Improvement, Data Analysis, Data Annotation.</li>
+                <li><strong>Soft Skills:</strong> Communication, Cross-functional Collaboration, Teamwork, Multitasking, Prioritization, Active Listening.</li>
             </ul>
-            <h3>Analytical & Soft Skills</h3>
-            <ul>
-                <li>Problem-Solving, Cross-functional Collaboration, Multitasking, Prioritization, Communication, Active Listening</li>
-            </ul>
-        </section>
-
-        <hr>
+        </div>
 
         <!-- Professional Experience Section -->
-        <section>
-            <h2>Professional Experience</h2>
-            <div class="experience">
-                <h3>Chatowl Inc. (USA, Remote)</h3>
-                <p><em>Quality Assurance & Natural Language Processing Assistant</em> | November 2022 – November 2024</p>
-                <ul>
-                    <li>Developed and enhanced NLP-based mental health tools, achieving a <strong>20% reduction in error rates</strong> and a <strong>25% decrease in testing cycle time</strong>.</li>
-                    <li>Collaborated cross-functionally to streamline QA processes, utilizing SQL and Argilla for data analysis to increase data accuracy.</li>
-                    <li>Improved project transparency and communication through consistent documentation and reporting, supporting teams across multiple time zones.</li>
-                </ul>
-            </div>
-            <div class="experience">
-                <h3>Omega Healthcare Management Services (Bangalore)</h3>
-                <p><em>Accounts Receivable Assistant</em> | April 2022 – October 2022</p>
-                <ul>
-                    <li>Achieved <strong>85% billing accuracy</strong> by resolving discrepancies in Medicare, Medicaid, and private insurance claims.</li>
-                    <li>Improved reconciliation processes by creating Excel-based reports, leading to a <strong>10% reduction in processing time</strong>.</li>
-                    <li>Supported U.S. healthcare insurance operations with a focus on Northern California ambulance services.</li>
-                </ul>
-            </div>
-            <div class="experience">
-                <h3>I Plus Research Services (Bangalore)</h3>
-                <p><em>Sales Consultant</em> | January 2022 – March 2022</p>
-                <ul>
-                    <li>Enhanced client satisfaction by <strong>20%</strong> through effective communication and personalized investment advice for the Indian stock market (NSE).</li>
-                    <li>Educated clients on intraday and options trading, promoting informed investment decisions and reducing stock market apprehensions.</li>
-                </ul>
-            </div>
-        </section>
-
-        <hr>
+        <div class="section">
+            <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+            <h3><u>Chatowl Inc., USA (Remote):</u> November 2022 – Present</h3>
+            <p><strong>Quality Assurance (QA) & Natural Language Processing (NLP) Assistant</strong></p>
+            <ul>
+                <li>Contributed to a venture-backed U.S. Mental Health Startup delivering affordable, AI-driven Chat therapy.</li>
+                <li>Improved NLP-based mental health tools, reducing error rates by 20% and increasing user satisfaction with high-quality data for LLM training.</li>
+                <li>Led cross-functional collaboration to streamline QA processes, achieving a 25% decrease in testing cycle time.</li>
+            </ul>
+        </div>
 
         <!-- Education Section -->
-        <section>
-            <h2>Education</h2>
-            <p><strong>B.Sc. in Industrial Science</strong><br>
-            <em>Yashwantrao Chavan Maharashtra Open University (YCMOU), Nashik</em><br>
-            June 2017 - June 2021</p>
-
-            <p><strong>Aircraft Maintenance Engineering (Mechanical Stream)</strong><br>
-            <em>Hindustan Aerospace & Engineering, Aundh - Pune</em><br>
-            June 2017 - December 2021</p>
-        </section>
-
-        <hr>
-
-        <!-- Languages Section -->
-        <section>
-            <h2>Languages</h2>
+        <div class="section">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
             <ul>
-                <li><strong>English:</strong> Professional Working Proficiency</li>
-                <li><strong>Hindi:</strong> Professional Working Proficiency</li>
-                <li><strong>Marathi:</strong> Native or Bilingual Proficiency</li>
+                <li><strong>Hindustan Aerospace & Engineering, Pune:</strong> June 2017 - December 2021 (Aircraft Maintenance Engineering)</li>
+                <li><strong>YCMOU, Nashik:</strong> June 2017 - June 2021 (B.Sc. in Industrial Science)</li>
             </ul>
-        </section>
-
-        <hr>
+        </div>
 
         <!-- Projects & Achievements Section -->
-        <section>
-            <h2>Projects & Achievements</h2>
+        <div class="section">
+            <h2><i class="fas fa-trophy"></i> Projects & Achievements</h2>
             <ul>
-                <li><strong>Therapeutic Conversation Data Gathering:</strong> Enhanced machine learning and NLP systems by developing therapeutic conversations to support mental health initiatives, resulting in empathetic user interactions and improved user well-being.</li>
-                <li><strong>Billing Accuracy Project:</strong> Implemented a tracking system at Omega Healthcare, achieving <strong>90% billing accuracy</strong> for Medicare and Medicaid, reducing payment delays and building client trust. Set a record of <strong>$14,203 cash collection</strong> in a week on June 29, 2022.</li>
-                <li><strong>QA Process Optimization at Chatowl:</strong> Led a QA process overhaul, reducing testing time by <strong>25%</strong> and implementing NLP-based emotion detection to improve conversational responses.</li>
+                <li><strong>Therapeutic Conversation Data Gathering:</strong> Developed and optimized therapeutic conversations to enhance machine learning and NLP-AI systems, enabling more effective and empathetic interactions.</li>
+                <li><strong>Billing Accuracy Project:</strong> Refined a tracking system ensuring 90% billing accuracy for Medicare, Medicaid, and Private Insurance accounts.</li>
             </ul>
-        </section>
+        </div>
     </div>
 
 </body>
